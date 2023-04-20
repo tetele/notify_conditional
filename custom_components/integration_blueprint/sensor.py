@@ -1,4 +1,4 @@
-"""Sensor platform for notify_conditional"""
+"""Sensor platform for notify_conditional."""
 from __future__ import annotations
 
 from homeassistant.components.sensor import SensorEntity, SensorEntityDescription
