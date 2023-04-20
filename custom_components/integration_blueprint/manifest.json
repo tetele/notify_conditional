@@ -1,12 +1,12 @@
 {
-  "domain": "integration_blueprint",
-  "name": "Integration blueprint",
+  "domain": "notify_conditional",
+  "name": "Conditional notifications",
   "codeowners": [
-    "@ludeeus"
+    "@tetele"
   ],
   "config_flow": true,
-  "documentation": "https://github.com/ludeeus/integration_blueprint",
+  "documentation": "https://github.com/tetele/notify_conditional",
   "iot_class": "cloud_polling",
-  "issue_tracker": "https://github.com/ludeeus/integration_blueprint/issues",
+  "issue_tracker": "https://github.com/tetele/notify_conditional/issues",
   "version": "0.0.0"
 }

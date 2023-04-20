@@ -1,15 +1,15 @@
-"""Sensor platform for integration_blueprint."""
+"""Sensor platform for notify_conditional"""
 from __future__ import annotations
 
 from homeassistant.components.sensor import SensorEntity, SensorEntityDescription
 
 from .const import DOMAIN
 from .coordinator import BlueprintDataUpdateCoordinator
-from .entity import IntegrationBlueprintEntity
+from .entity import ConditionalNotifyEntity
 
 ENTITY_DESCRIPTIONS = (
     SensorEntityDescription(
-        key="integration_blueprint",
+        key="notify_conditional",
         name="Integration Sensor",
         icon="mdi:format-quote-close",
     ),
@@ -20,7 +20,7 @@ async def async_setup_entry(hass, entry, async_add_devices):
     """Set up the sensor platform."""
     coordinator = hass.data[DOMAIN][entry.entry_id]
     async_add_devices(
-        IntegrationBlueprintSensor(
+        ConditionalNotifySensor(
             coordinator=coordinator,
             entity_description=entity_description,
         )
@@ -28,8 +28,8 @@ async def async_setup_entry(hass, entry, async_add_devices):
     )
 
 
-class IntegrationBlueprintSensor(IntegrationBlueprintEntity, SensorEntity):
-    """integration_blueprint Sensor class."""
+class ConditionalNotifySensor(ConditionalNotifyEntity, SensorEntity):
+    """notify_conditional Sensor class."""
 
     def __init__(
         self,
