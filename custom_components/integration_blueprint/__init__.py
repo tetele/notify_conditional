@@ -14,11 +14,7 @@ from .api import ConditionalNotifyApiClient
 from .const import DOMAIN
 from .coordinator import BlueprintDataUpdateCoordinator
 
-PLATFORMS: list[Platform] = [
-    Platform.SENSOR,
-    Platform.BINARY_SENSOR,
-    Platform.SWITCH,
-]
+PLATFORMS: list[Platform] = []
 
 
 # https://developers.home-assistant.io/docs/config_entries_index/#setting-up-an-entry
