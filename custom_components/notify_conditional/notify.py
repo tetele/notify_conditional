@@ -115,7 +115,7 @@ async def _async_process_if(
 
         if errors:
             LOGGER.warning(
-                "Error evaluating condition for '%s':\n%s",
+                "Error evaluating condition for conditional notification service '%s':\n%s",
                 name,
                 ConditionErrorContainer("condition", errors=errors),
             )
