@@ -11,7 +11,9 @@ from homeassistant.core import HomeAssistant
 
 from .const import DOMAIN
 
-PLATFORMS: list[Platform] = []
+PLATFORMS: list[Platform] = [
+    Platform.NOTIFY,
+]
 
 
 # https://developers.home-assistant.io/docs/config_entries_index/#setting-up-an-entry
