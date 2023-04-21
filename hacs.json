@@ -1,5 +1,5 @@
 {
-    "name": "Integration blueprint",
+    "name": "Conditional notifications",
     "filename": "notify_conditional.zip",
     "hide_default_branch": true,
     "homeassistant": "2023.3.0",
